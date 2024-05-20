@@ -3,7 +3,7 @@
 	import Quote3D from '$lib/Depth3D/Components/Quote3D.svelte';
 	import Team3D from '$lib/Depth3D/Components/Team3D.svelte';
 
-	let url = '/svelte-depth-3d';
+	let url = '/svelte-depth-3d-component';
 
 	let members = [
 		{
