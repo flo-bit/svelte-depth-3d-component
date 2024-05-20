@@ -1,11 +1,5 @@
 <script lang="ts">
-	import Depth3D from '$lib/Depth3D/Base/Depth3D.svelte';
-	import { Canvas } from '@threlte/core';
-
-	export let quote: string;
-
-	export let author: string;
-	export let role: string | undefined = undefined;
+	import Depth3D from '$lib/Depth3D';
 
 	export let image: {
 		image: string;
@@ -19,22 +13,19 @@
 			<div class="relative col-span-2 lg:col-start-1 lg:row-start-2">
 				<blockquote class="text-xl font-semibold leading-8 text-gray-900 sm:text-2xl sm:leading-9">
 					<p>
-						{quote}
+						"Two things are infinite: the universe and the number of times people misattribute
+						quotes to me; and I'm not sure about the universe."
 					</p>
 				</blockquote>
 			</div>
 			<div class="col-end-1 w-32 lg:row-span-4 lg:w-72 h-32 lg:h-72 relative">
 				<div class="absolute inset-0">
-					<Canvas>
-						<Depth3D {image} rounded />
-					</Canvas>
+					<Depth3D {image} rounded />
 				</div>
 			</div>
 			<figcaption class="text-base lg:col-start-1 lg:row-start-3">
-				<div class="font-semibold text-gray-900">{author}</div>
-				{#if role}
-					<div class="mt-1 text-gray-500">{role}</div>
-				{/if}
+				<div class="font-semibold text-gray-900">Albert Einstein</div>
+				<div class="mt-1 text-gray-500">Famous person</div>
 			</figcaption>
 		</figure>
 	</div>

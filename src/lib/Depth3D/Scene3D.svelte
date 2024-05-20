@@ -1,8 +1,8 @@
 <script lang="ts">
-	import { T, useTask, useThrelte } from '@threlte/core';
+	import { T, useTask } from '@threlte/core';
 	import { useTexture, Align } from '@threlte/extras';
 
-	import { Vector2, ShaderMaterial, PlaneGeometry, LinearSRGBColorSpace, Color } from 'three';
+	import { Vector2, ShaderMaterial, PlaneGeometry, LinearSRGBColorSpace } from 'three';
 
 	type DepthImage = {
 		image: string;

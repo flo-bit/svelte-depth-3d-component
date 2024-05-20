@@ -1,7 +1,7 @@
 <script>
-	import Hero3D from '$lib/Depth3D/Components/Hero3D.svelte';
-	import Quote3D from '$lib/Depth3D/Components/Quote3D.svelte';
-	import Team3D from '$lib/Depth3D/Components/Team3D.svelte';
+	import Hero from './Hero.svelte';
+	import Quote from './Quote.svelte';
+	import Team from './Team.svelte';
 
 	let url = '/svelte-depth-3d-component';
 
@@ -43,7 +43,7 @@
 	</svg>
 </a>
 
-<Hero3D
+<Hero
 	image={{
 		image: url + '/images/couple.jpg',
 		depth: url + '/images/couple-depth.png'
@@ -56,14 +56,11 @@
 	</div>
 </div>
 
-<Quote3D
-	quote={`"Two things are infinite: the universe and the number of times people misattribute quotes to me; and I'm not sure about the universe."`}
-	author="Albert Einstein"
-	role="Famous person"
+<Quote
 	image={{
 		image: url + '/images/albert_einstein.png',
 		depth: url + '/images/albert_einstein-depth.png'
 	}}
 />
 
-<Team3D {members} />
+<Team {members} />
