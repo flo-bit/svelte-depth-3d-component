@@ -2,7 +2,7 @@
 
 Display an image with a fake 3D effect, using a depth map. Made for svelte, using threlte, threejs and tailwindcss. Still a work in progress, but usable.
 
-[https://flo-bit.github.io/svelte-depth-3d-component/](Try the demo here.)
+[Try the demo here.](https://flo-bit.github.io/svelte-depth-3d-component/)
 
 
 https://github.com/flo-bit/svelte-depth-3d-component/assets/45694132/bea0d04f-487b-4119-ba1a-a5743728195a
