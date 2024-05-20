@@ -33,7 +33,7 @@
 	];
 </script>
 
-<a class="absolute top-4 right-4" href="#">
+<a class="absolute top-4 right-4" href="https://github.com/flo-bit/svelte-depth-3d-component">
 	<svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" class="w-8 h-8">
 		<path
 			fill-rule="evenodd"

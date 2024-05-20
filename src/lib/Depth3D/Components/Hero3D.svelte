@@ -24,7 +24,7 @@
 						For your website, made with Svelte, Threlte and Three.js
 					</p>
 					<div class="mt-10 flex items-center gap-x-6">
-						<a href="#" class="text-sm font-semibold leading-6 text-gray-900"
+						<a href="https://github.com/flo-bit/svelte-depth-3d-component" class="text-sm font-semibold leading-6 text-gray-900"
 							>See on Github <span aria-hidden="true">→</span></a
 						>
 					</div>
