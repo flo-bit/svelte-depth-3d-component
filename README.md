@@ -10,7 +10,7 @@ https://github.com/flo-bit/svelte-depth-3d-component/assets/45694132/bea0d04f-48
 
 ## How to use
 
-1. Copy and paste the `src/lib/Depth3D/` folder of this repository into your svelte projects `src/lib/` folder.
+1. Copy and paste the [`src/lib/Depth3D/`](https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2Fflo-bit%2Fsvelte-depth-3d-component%2Ftree%2Fmain%2Fsrc%2Flib%2FDepth3D) folder of this repository into your svelte projects `src/lib/` folder.
 2. Install [tailwindcss](https://tailwindcss.com/docs/guides/sveltekit) and [threlte (core and extras)](https://threlte.xyz/docs/learn/getting-started/installation) (work through their setup or see below for commands)
 3. Get an image and generate a accompanying depth map, for example using [zoedepth](https://replicate.com/cjwbw/zoedepth)
 4. Use the `Depth3D` component in your pages directly like so:
