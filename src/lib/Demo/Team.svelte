@@ -1,6 +1,8 @@
 <script lang="ts">
-	import Depth3D from '$lib/Depth3D/Base/Depth3D.svelte';
-	import { Canvas } from '@threlte/core';
+	import Depth3D from '$lib/Depth3D';
+
+	export let title = 'The Team';
+	export let description = 'These are real people with totally not AI generated names and descriptions.';
 
 	export let members: {
 		name: string;
@@ -16,30 +18,22 @@
 		class="mx-auto grid max-w-2xl lg:max-w-4xl grid-cols-1 gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-5"
 	>
 		<div class="max-w-2xl xl:col-span-2">
-			<h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">The Team</h2>
+			<h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">{title}</h2>
 			<p class="mt-6 text-lg leading-8 text-gray-600">
-				These are real people with totally not AI generated names and descriptions.
+				{description}
 			</p>
 		</div>
 		<ul role="list" class="-mt-12 space-y-12 divide-y divide-gray-200 xl:col-span-3">
 			{#each members as member}
 				<li class="flex flex-col gap-10 pt-12 sm:flex-row">
-					<!-- <img
-					class="aspect-[4/5] w-52 flex-none rounded-2xl object-cover"
-					src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80"
-					alt=""
-				/> -->
-
 					<div class="aspect-[4/5] w-52 flex-none rounded-2xl overflow-hidden">
-						<Canvas>
-							<Depth3D
-								image={{
-									image: member.image,
-									depth: member.depth
-								}}
-								cameraPosition={[0, -0.5, 8]}
-							/>
-						</Canvas>
+						<Depth3D
+							image={{
+								image: member.image,
+								depth: member.depth
+							}}
+							cameraPosition={[0, -0.5, 8]}
+						/>
 					</div>
 					<div class="max-w-xl flex-auto">
 						<h3 class="text-lg font-semibold leading-8 tracking-tight text-gray-900">

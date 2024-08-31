@@ -1,8 +1,8 @@
 <script lang="ts">
-	import { T, useTask, useThrelte } from '@threlte/core';
+	import { T, useTask } from '@threlte/core';
 	import { useTexture, Align } from '@threlte/extras';
 
-	import { Vector2, ShaderMaterial, PlaneGeometry, LinearSRGBColorSpace, Color } from 'three';
+	import { Vector2, ShaderMaterial, PlaneGeometry, LinearSRGBColorSpace } from 'three';
 
 	type DepthImage = {
 		image: string;
@@ -18,7 +18,7 @@
 	export let rotationScale = 0.2;
 	export let rotationSpeed = 1.5;
 
-	export let detail = 1000;
+	export let detail = 200;
 
 	export let depthScale = 2;
 
