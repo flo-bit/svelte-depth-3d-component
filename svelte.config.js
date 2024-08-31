@@ -15,6 +15,9 @@ const config = {
 
 		prerender: {
 			handleHttpError: 'ignore'
+		},
+		paths: {
+			base: '/svelte-depth-3d-component'
 		}
 	}
 };

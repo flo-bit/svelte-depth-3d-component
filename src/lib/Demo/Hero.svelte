@@ -31,7 +31,7 @@
 			<div
 				class="mt-10 aspect-[6/5] w-full max-w-lg rounded-2xl overflow-hidden sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-36"
 			>
-				<Depth3D {image} cameraPosition={[0, 0, 7]} />
+				<Depth3D {image} detail={1000} cameraPosition={[0, 0, 7]} />
 			</div>
 		</div>
 	</div>
