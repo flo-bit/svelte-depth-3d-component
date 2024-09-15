@@ -35,6 +35,7 @@
 	"type": "module",
 	"dependencies": {
 		"@sveltejs/adapter-static": "^3.0.1",
+		"@tailwindcss/aspect-ratio": "^0.4.2",
 		"@threlte/core": "^7.3.0",
 		"@threlte/extras": "^8.11.2",
 		"@types/three": "^0.164.0",
