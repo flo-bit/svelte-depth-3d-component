@@ -1,36 +1,9 @@
 <script>
+	import Grid from './Grid.svelte';
 	import Hero from './Hero.svelte';
 	import Quote from './Quote.svelte';
-	import Team from './Team.svelte';
 
 	let url = '/svelte-depth-3d-component';
-
-	let members = [
-		{
-			name: 'Fiona Firestarter',
-			role: 'Head of Desk Decoration',
-			description:
-				'Brings the office to life with quirky decorations. Known for her seasonal desk themes and a collection of rubber ducks.',
-			image: url + '/images/member1.png',
-			depth: url + '/images/member1-depth.png'
-		},
-		{
-			name: 'Johnny Appletini',
-			role: 'Chief Snack Officer (CSO)',
-			description:
-				'Responsible for keeping the snack drawer stocked and the team fueled. Rumored to have a secret stash of gummy bears.',
-			image: url + '/images/member2.png',
-			depth: url + '/images/member2-depth.png'
-		},
-		{
-			name: 'Chuckles McGee',
-			role: 'Director of Fun Times (DFT)',
-			description:
-				'Ensures everyone is having a good time with spontaneous dance-offs and meme sharing. The unofficial morale booster.',
-			image: url + '/images/member3.png',
-			depth: url + '/images/member3-depth.png'
-		}
-	];
 </script>
 
 <a class="absolute top-4 right-4" href="https://github.com/flo-bit/svelte-depth-3d-component">
@@ -44,17 +17,25 @@
 </a>
 
 <Hero
-	image={{
-		image: url + '/images/couple.jpg',
-		depth: url + '/images/couple-depth.png'
-	}}
+	images={[
+		{
+			image: url + '/images/girl.jpg',
+			depth: url + '/images/girl-depth.png'
+		},
+		{
+			image: url + '/images/napoleon-crossing-the-alps.jpg',
+			depth: url + '/images/napoleon-crossing-the-alps-depth.png'
+		},
+		{
+			image: url + '/images/van-gogh-self-portrait.webp',
+			depth: url + '/images/van-gogh-self-portrait-depth.png'
+		},
+		{
+			image: url + '/images/mona-lisa.jpg',
+			depth: url + '/images/mona-lisa-depth.png'
+		}
+	]}
 />
-
-<div class="py-8 md:py-16">
-	<div class="mx-auto max-w-2xl lg:max-w-4xl px-6 lg:px-8">
-		<h2 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">Examples</h2>
-	</div>
-</div>
 
 <Quote
 	image={{
@@ -63,4 +44,25 @@
 	}}
 />
 
-<Team {members} />
+<Grid
+	items={[
+		{
+			name: 'Napoleon Crossing the Alps',
+			image: url + '/images/napoleon-crossing-the-alps.jpg',
+			depth: url + '/images/napoleon-crossing-the-alps-depth.png',
+			href: '#'
+		},
+		{
+			name: 'Van Gogh Self Portrait',
+			image: url + '/images/van-gogh-self-portrait.webp',
+			depth: url + '/images/van-gogh-self-portrait-depth.png',
+			href: '#'
+		},
+		{
+			name: 'Mona Lisa',
+			image: url + '/images/mona-lisa.jpg',
+			depth: url + '/images/mona-lisa-depth.png',
+			href: '#'
+		}
+	]}
+/>

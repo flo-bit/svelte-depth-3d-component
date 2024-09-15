@@ -11,10 +11,9 @@
 	<div class="relative mx-auto max-w-2xl py-24 sm:py-32 lg:max-w-4xl">
 		<figure class="grid grid-cols-1 items-center gap-x-6 gap-y-8 lg:gap-x-10">
 			<div class="relative col-span-2 lg:col-start-1 lg:row-start-2">
-				<blockquote class="text-xl font-semibold leading-8 text-gray-900 sm:text-2xl sm:leading-9">
+				<blockquote class="text-xl font-semibold leading-8 text-stone-50 sm:text-2xl sm:leading-9">
 					<p>
-						"Two things are infinite: the universe and the number of times people misattribute
-						quotes to me; and I'm not sure about the universe."
+						"I love this component, it's so easy to use and looks amazing on my website."
 					</p>
 				</blockquote>
 			</div>
@@ -24,8 +23,8 @@
 				</div>
 			</div>
 			<figcaption class="text-base lg:col-start-1 lg:row-start-3">
-				<div class="font-semibold text-gray-900">Albert Einstein</div>
-				<div class="mt-1 text-gray-500">Famous person</div>
+				<div class="font-semibold text-stone-100">Albert Einstein</div>
+				<div class="mt-1 text-stone-400">Famous person</div>
 			</figcaption>
 		</figure>
 	</div>
