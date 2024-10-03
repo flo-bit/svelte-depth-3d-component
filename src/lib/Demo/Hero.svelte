@@ -17,14 +17,19 @@
 			<div class="sm:max-w-xl xl:col-end-1 xl:row-start-1 flex flex-col justify-center">
 				<div class="mt-20 text-lg leading-8 text-stone-400">
 					<h1 class="max-w-2xl text-4xl font-bold tracking-tight text-stone-50 sm:text-6xl mb-8">
-						depth based 3d effect for svelte websites
+						svelte depth based 3d effect
 					</h1>
-					made with threlte, three.js and tailwind
+					made with threlte, three.js and tailwind by <a
+					href="https://flo-bit.dev"
+					target="_blank"
+					class="font-semibold text-stone-200"
+					>flo-bit</a
+				>
 				</div>
 				<div class="mt-10 flex items-center gap-x-6">
 					<a
 						href="https://github.com/flo-bit/svelte-depth-3d-component"
-						class="text-sm font-semibold leading-6 text-stone-100"
+						class="text-lg font-semibold leading-6 text-stone-100"
 						>get the code <span aria-hidden="true">→</span></a
 					>
 				</div>
