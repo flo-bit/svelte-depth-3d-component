@@ -70,3 +70,7 @@ npm install three @threlte/core \
             @threlte/extras \
             @types/three
 ```
+
+## License
+
+MIT

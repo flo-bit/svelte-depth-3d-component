@@ -41,5 +41,6 @@
 		"@types/three": "^0.164.0",
 		"three": "^0.164.1",
 		"vite-imagetools": "^7.0.2"
-	}
+	},
+	"license": "MIT"
 }
